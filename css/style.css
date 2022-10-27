@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap');
+
+:root {
+    --color-white: #F4F5EF;
+    --color-purple: #614AD9;
+    --color-green: #C6F277;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.background-color-green {
+    background-color: var(--color-green);
+    color: black;
+}
+
+.background-color-purple {
+    background-color: var(--color-purple);
+    color: #F4F5EF;
+}
+
+.background-color-white {
+    background-color: var(--color-white);
+    color: black;
+}
+
+.navbar-menu {
+    gap: 16px;
+}
+
+.btn-account {
+    color: #F4F5EF;
+    border-color: #614AD9;
+    background-color: #614AD9;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+  
+.btn-account:hover {
+    color: #614AD9;
+    background-color: #F4F5EF;
+    border-color: #614AD9;
+}
+
+.collapse .navbar-collapse {
+    justify-content: end;
+}
+
+/* QUITAR BORDE DEL ICONO DE NAV */
+.navbar-toggler {
+    border: 0px;
+}
+
+/* Sección (descargar App) */
+.runbank-card {
+    width: 380px;
+    margin-top: 64px;
+    margin-bottom: 80px;
+    padding-right: 16px;
+    padding-left: 16px;
+    transform: rotate(10deg);
+}
+
+.runbank-download {
+    width: 160px;
+}
+
+.hero__titulo {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.hero__parrafo {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 32px;
+}
+
+.hero__imagen {
+    margin-bottom: 32px;
+}
+
+/*  */
+.container__comenzar {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.comenzar__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.comenzar__parrafo {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.comenzar__box {
+    width: 332px;
+    height: 112px;
+    border: 1px solid black;
+    background-color: var(--color-green);
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    filter: drop-shadow(-10px 10px 5px rgba(244, 245, 239, 0.25));
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+/*  */
+.container__beneficios {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.beneficios__boxes--titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios__box--titulo {
+    border: 1px solid black;
+    background-color: var(--color-white);
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    margin-bottom: 32px;
+}
+
+.beneficios__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.beneficios__box {
+    width: 364px;
+    height: 112px;
+    border: 1px solid black;
+    background-color: var(--color-white);
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+/*  */
+.container__info {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.info__parrafo {
+    max-width: 512px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+/* Footer */
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 576px) {
+    .runbank-card { 
+        margin-top: 80px;
+    }
+
+    .runbank-download {
+        width: 192px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .runbank-card {
+        width: 600px;
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .runbank-download {
+        width: 224px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container__hero {
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .btn-account {
+        margin-left: 32px;
+    }
+}
