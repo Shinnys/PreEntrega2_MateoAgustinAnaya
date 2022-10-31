@@ -43,14 +43,6 @@ header {
     color: black;
 }
 
-.navbar-menu {
-    gap: 16px;
-}
-
-.navbar-nav {
-    gap: 0px;
-}
-
 .btn-account {
     color: #F4F5EF;
     border-color: #614AD9;
@@ -110,11 +102,6 @@ header {
 
 /* Sesion (¿como comenzar? e info) */
 /* ¿como comenzar? */
-/* .container__left {
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */
-
 .container__left--start {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -268,6 +255,46 @@ a {
     gap: 12px;
 }
 
+/* help.html */
+.container__help {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.help__img {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.help__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accordion-button {
+    border: 1px solid black;
+}
+
+.accordion-button:focus {
+    z-index: 0;
+    border-color: var(--color-black);
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    border: 1px solid black;
+    border-top: none;
+}
+
+
 @media screen and (min-width: 448px) {
     .runbank-download {
         width: 192px;
@@ -312,6 +339,10 @@ a {
     .container__hero {
         margin-top: 96px;
         margin-bottom: 96px;
+    }
+    
+    .navbar-nav {
+        gap: 16px;
     }
 
     .btn-account {
