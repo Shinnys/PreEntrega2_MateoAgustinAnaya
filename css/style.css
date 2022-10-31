@@ -43,6 +43,10 @@ header {
     color: black;
 }
 
+.runbank-h1 {
+    display: none;
+}
+
 .btn-account {
     color: #F4F5EF;
     border-color: #614AD9;
@@ -257,7 +261,7 @@ a {
 
 /* help.html */
 .container__help {
-    padding-top: 32px;
+    padding-top: 24px;
     padding-bottom: 32px;
 }
 
@@ -266,8 +270,8 @@ a {
 }
 
 .help__title {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 24px;
     font-size: 20px;
     font-weight: bold;
 }
