@@ -257,18 +257,17 @@ a {
 
 /* help.html */
 .container__help {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .help__img {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 32px;
 }
 
 .help__title {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -293,7 +292,6 @@ a {
     border: 1px solid black;
     border-top: none;
 }
-
 
 @media screen and (min-width: 448px) {
     .runbank-download {
