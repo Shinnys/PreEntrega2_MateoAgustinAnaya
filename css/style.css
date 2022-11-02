@@ -7,6 +7,7 @@
     --color-purple: #614AD9;
     --color-green: #C6F277;
     --color-black: #000000;
+    --color-form: #F4F5EF;
 }
 
 * {
@@ -23,7 +24,7 @@ body {
 /* Colores fondo */
 .background-color-green {
     background-color: var(--color-green);
-    color: black;
+    color: var(--color-black);
 }
 
 .background-color-purple {
@@ -33,7 +34,12 @@ body {
 
 .background-color-white {
     background-color: var(--color-white);
-    color: black;
+    color: var(--color-black);
+}
+
+.background-color-form {
+    background-color: var(--color-form);
+    color: var(--color-black);
 }
 
 /* Header */
@@ -221,7 +227,7 @@ header {
 }
 
 /* Footer */
-a {
+.footer__icon a {
     color: var(--color-white);
     text-decoration: none;
 }
@@ -297,6 +303,100 @@ a {
     border-top: none;
 }
 
+/* Comision */
+p {
+    margin-bottom: 0 !important;
+}
+
+.container__commission {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 12px;
+}
+
+.container__commission-bills  {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 12px;
+}
+
+.container__commission--box {
+    border: 1px solid var(--color-black);
+    padding: 8px 16px 8px 16px;
+    /* min-width: 270px; */
+}
+
+.commission__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.commission__text {
+    font-size: 16px;
+    font-weight: normal;
+   /*  padding-right: 16px; */
+}
+
+.commission__cost {
+    font-size: 16px;
+    font-weight: 500;
+    border-top: 1px dashed var(--color-black);
+    margin-top: 16px;
+    padding: 8px;
+}
+
+/* Register */
+.body {
+    height: 100vh;
+}
+
+.form-control {
+    min-height: 48px;
+    line-height: initial;
+}
+
+.container__form {
+    padding: 32px;
+    border: 1px solid var(--color-black);
+}
+
+.btn-form {
+    color: #F4F5EF;
+    border-color: #614AD9;
+    background-color: #614AD9;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.btn-form:hover {
+    color: #614AD9;
+    background-color: #F4F5EF;
+    border-color: #614AD9;
+    transform: scale(1.05);
+}
+
+/* Earn */
+.container__earn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.container__earn--item {
+    border: 1px solid var(--color-black);
+    padding: 16px;
+}
+
+.img-earn {
+    max-height: 400px;
+}
+
 @media screen and (min-width: 448px) {
     .runbank-download {
         width: 192px;
@@ -318,6 +418,10 @@ a {
         height: 112px;
     }
     
+    /* Comision */
+    .container__commission--box {
+        width: 452px;
+    }
     /* Footer */
     .footer__download {
         flex-direction: row;
@@ -335,6 +439,11 @@ a {
         width: 552px;
         height: 80px;
     }
+
+    /* Comision */
+    .container__commission--box {
+        width: 632px;
+     }
 }
 
 @media screen and (min-width: 992px) {
@@ -367,6 +476,27 @@ a {
         height: 80px;
         padding: 12px;
         font-size: 16px;
+    }
+
+    /* Comisiones */
+    .container__commission {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container__commission-bills {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container__commission--box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 168px;
+        width: auto;
     }
 
     /* Footer */
